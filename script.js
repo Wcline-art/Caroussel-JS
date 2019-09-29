@@ -21,13 +21,13 @@ function nextImage() {
 }
 
 function previousImage() {
-  position--;
+  position++;
 
   if (position === li.length) {
     position = 0;
   }
 
-  for (let i = 0; i > li.length; i--) {
+  for (let i = 0; i < li.length; i++) {
     li[i].classList.remove("active");
   }
   li[position].classList.add("active");
